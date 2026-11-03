@@ -29,9 +29,6 @@
     border_color: "2a2a33"
   };
 
-  var yearEl = document.querySelector("[data-year]");
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
   var buyLinks = Array.prototype.slice.call(document.querySelectorAll("[data-itch-buy]"));
   var embeds = Array.prototype.slice.call(document.querySelectorAll("[data-itch-embed]"));
   if (!buyLinks.length && !embeds.length) return;
