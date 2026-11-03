@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANYWARE — Independent Game Studio</title>
+  <meta name="description" content="ANYWARE is an independent game studio making games that run anywhere. Play OCTAKILL, Supremacy and PlanetBox free in your browser, and get Mobius on itch.io." />
+  <meta name="theme-color" content="#121216" />
+
+  <meta property="og:title" content="ANYWARE — Independent Game Studio" />
+  <meta property="og:description" content="Games that run anywhere. Play free in your browser." />
+  <meta property="og:image" content="assets/img/octakill.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#games">Skip to games</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ANYWARE home">
+        <img src="assets/img/logo.png" alt="" width="40" height="40" />
+        <span>ANYWARE</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#mobius">Mobius</a>
+        <a href="#studio">Studio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent game studio</p>
+          <h1 class="hero-title">Games that run <span class="accent">anywhere.</span></h1>
+          <p class="hero-lede">
+            We make fast, sharp, no-install games. Click play and you're in &mdash;
+            on a laptop, a school Chromebook, or whatever's in front of you.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#games">Browse games</a>
+            <a class="btn btn-ghost" href="games/octakill.html" target="_blank" rel="noopener">
+              Play OCTAKILL
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            </a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>Games</dt><dd>4</dd></div>
+            <div><dt>Free to play</dt><dd>3</dd></div>
+            <div><dt>Installs needed</dt><dd>0</dd></div>
+          </dl>
+        </div>
+        <div class="hero-mark" aria-hidden="true">
+          <img src="assets/img/logo.png" alt="" width="512" height="512" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAMES ============ -->
+    <section id="games" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Games</h2>
+          <p>Free games open in a new tab and run right in your browser. Paid games are handled securely through itch.io.</p>
+        </div>
+
+        <div class="game-grid">
+          <!-- OCTAKILL -->
+          <article class="game-card" id="octakill">
+            <a class="cover" href="games/octakill.html" target="_blank" rel="noopener" style="background-image:url('assets/img/octakill.jpg')" aria-label="Play OCTAKILL in a new tab">
+              <img src="assets/img/octakill.jpg" alt="OCTAKILL key art: a low-poly soldier beside a mushroom cloud over a city" width="1920" height="1080" loading="lazy" />
+            </a>
+            <div class="game-body">
+              <div class="game-meta">
+                <span class="price price-free">Free</span>
+                <ul class="tags" aria-label="Tags">
+                  <li>Shooter</li>
+                  <li>Browser</li>
+                </ul>
+              </div>
+              <h3>OCTAKILL</h3>
+              <p>A low-poly arena shooter. Eight modes, eight maps, and it plays on anything.</p>
+              <div class="game-actions">
+                <a class="btn btn-primary" href="games/octakill.html" target="_blank" rel="noopener">
+                  Play in browser
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SUPREMACY -->
+          <article class="game-card" id="supremacy">
+            <a class="cover" href="games/supremacy.html" target="_blank" rel="noopener" style="background-image:url('assets/img/supremacy.jpg')" aria-label="Play Supremacy in a new tab">
+              <img src="assets/img/supremacy.jpg" alt="Supremacy title art over a field of coloured hexagons" width="630" height="500" loading="lazy" />
+            </a>
+            <div class="game-body">
+              <div class="game-meta">
+                <span class="price price-free">Free</span>
+                <ul class="tags" aria-label="Tags">
+                  <li class="tag-warn">Pre-Alpha</li>
+                  <li>Strategy</li>
+                  <li>Browser</li>
+                </ul>
+              </div>
+              <h3>SUPREMACY <span class="title-badge">[PRE-ALPHA]</span></h3>
+              <p>Every hexagon a nation. Expand, outmanoeuvre and conquer the map. Early build &mdash; expect rough edges.</p>
+              <div class="game-actions">
+                <a class="btn btn-primary" href="games/supremacy.html" target="_blank" rel="noopener">
+                  Play in browser
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PLANETBOX -->
+          <article class="game-card" id="planetbox">
+            <a class="cover" href="games/planetbox.html" target="_blank" rel="noopener" style="background-image:url('assets/img/planetbox.png')" aria-label="Play PlanetBox in a new tab">
+              <img src="assets/img/planetbox.png" alt="PlanetBox title art: a ringed planet in space beside a bright star" width="315" height="250" loading="lazy" />
+            </a>
+            <div class="game-body">
+              <div class="game-meta">
+                <span class="price price-free">Free</span>
+                <ul class="tags" aria-label="Tags">
+                  <li>Sandbox</li>
+                  <li>Simulation</li>
+                  <li>Browser</li>
+                </ul>
+              </div>
+              <h3>PLANETBOX</h3>
+              <p>Build planets around a star, found towns that grow into cities, and connect worlds with space travel.</p>
+              <div class="game-actions">
+                <a class="btn btn-primary" href="games/planetbox.html" target="_blank" rel="noopener">
+                  Play in browser
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MOBIUS (paid via itch.io) -->
+          <article class="game-card game-card-paid" id="mobius-card">
+            <a class="cover" href="#mobius" style="background-image:url('assets/img/mobius.svg')" aria-label="Mobius purchase details">
+              <img src="assets/img/mobius.svg" alt="Mobius cover art: a glowing orange Möbius strip" width="1600" height="900" loading="lazy" />
+            </a>
+            <div class="game-body">
+              <div class="game-meta">
+                <span class="price price-paid">$1.00</span>
+                <ul class="tags" aria-label="Tags">
+                  <li>Paid</li>
+                  <li>itch.io</li>
+                </ul>
+              </div>
+              <h3>MOBIUS</h3>
+              <p>The newest game from ANYWARE. One dollar, yours to keep. Purchases are processed by itch.io.</p>
+              <div class="game-actions">
+                <a class="btn btn-primary" href="https://anyware-studios.itch.io/mobius" target="_blank" rel="noopener" data-itch-buy="mobius">
+                  Buy for $1
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6Zm0 0L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+                </a>
+                <a class="btn btn-ghost" href="#mobius">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MOBIUS PURCHASE ============ -->
+    <section id="mobius" class="section section-buy">
+      <div class="container buy-inner">
+        <div class="buy-art">
+          <img src="assets/img/mobius.svg" alt="" width="1600" height="900" loading="lazy" />
+        </div>
+        <div class="buy-copy">
+          <p class="eyebrow">Get it on itch.io</p>
+          <h2>MOBIUS <span class="buy-price">$1</span></h2>
+          <p>
+            Mobius is sold through itch.io, so checkout is handled by them &mdash;
+            card or PayPal, instant download, and you can pay more if you want to support the studio.
+          </p>
+
+          <div class="itch-embed" data-itch-embed="mobius">
+            <p class="itch-embed-loading">Loading the itch.io store widget&hellip;</p>
+          </div>
+
+          <div class="buy-actions">
+            <a class="btn btn-primary btn-lg" href="https://anyware-studios.itch.io/mobius" target="_blank" rel="noopener" data-itch-buy="mobius">
+              Buy Mobius &mdash; $1
+            </a>
+            <a class="btn-link" href="https://anyware-studios.itch.io/mobius" target="_blank" rel="noopener">
+              Open the itch.io page
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STUDIO ============ -->
+    <section id="studio" class="section">
+      <div class="container studio-inner">
+        <img class="studio-logo" src="assets/img/logo.png" alt="ANYWARE logo: two orange arrows, one pointing down and one pointing up" width="512" height="512" loading="lazy" />
+        <div>
+          <h2>About ANYWARE</h2>
+          <p>
+            ANYWARE is a small independent studio. We build games that load in seconds,
+            run on modest hardware, and get you playing without accounts, launchers or downloads.
+          </p>
+          <ul class="studio-points">
+            <li><strong>Play in the browser.</strong> Every free game opens in its own tab, ready to go.</li>
+            <li><strong>Pay where it's safe.</strong> Paid games are sold only through itch.io.</li>
+            <li><strong>Always shipping.</strong> Pre-alpha builds land here first, so you can see what's next.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand brand-sm" href="#top">
+        <img src="assets/img/logo.png" alt="" width="28" height="28" />
+        <span>ANYWARE</span>
+      </a>
+      <p>&copy; <span data-year>2026</span> ANYWARE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
