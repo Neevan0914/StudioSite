@@ -191,6 +191,7 @@ p { margin: 0; }
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .buy-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.buy-art { justify-self: center; width: 100%; max-width: 520px; }
 .buy-art img { width: 100%; border-radius: var(--radius); border: 1px solid var(--line); }
 .buy-copy h2 { font-size: clamp(40px, 5.5vw, 64px); font-weight: 900; letter-spacing: 0.04em; display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
 .buy-price {

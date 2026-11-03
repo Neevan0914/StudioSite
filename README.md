@@ -32,5 +32,5 @@ To skip the widget's ID lookup, add the numeric game ID: `data-itch-id="1234567"
 ## Updating
 
 - **Update a game:** replace its file in `games/`.
-- **Mobius art:** `assets/img/mobius.svg` is a placeholder. Drop in the real cover and update the two `mobius.svg` references in `index.html`.
+- **Cover art:** replace the image in `assets/img/` (keep the file name).
 - **Add a paid game:** copy the Mobius card, then set `data-itch-buy` to the game's itch.io slug.
