@@ -95,13 +95,20 @@ p { margin: 0; }
   border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 16px; }
-.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 900; font-size: 20px; letter-spacing: 0.16em; }
+.brand { flex: none; display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 900; font-size: 20px; letter-spacing: 0.16em; }
 .brand img { width: 40px; height: 40px; border-radius: 9px; }
 .brand-sm { font-size: 15px; }
 .brand-sm img { width: 28px; height: 28px; border-radius: 6px; }
 .nav { display: flex; gap: clamp(14px, 3vw, 32px); }
 .nav a { text-decoration: none; font-weight: 600; font-size: 15px; color: var(--text-dim); }
 .nav a:hover { color: var(--text); }
+.nav { align-items: center; }
+.nav .nav-friends {
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+  padding: 7px 12px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--text);
+}
+.nav .nav-friends:hover { border-color: var(--orange); color: var(--orange); }
+.nav .nav-friends .icon { width: 0.9em; height: 0.9em; }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -225,6 +232,9 @@ p { margin: 0; }
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0; background: var(--bg-sunken); }
 .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
 .footer-inner p { color: var(--text-dim); font-size: 14px; }
+.footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.footer-links a { color: var(--text); font-size: 14px; font-weight: 600; text-decoration: none; }
+.footer-links a:hover { color: var(--orange); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
@@ -241,8 +251,18 @@ p { margin: 0; }
 @media (max-width: 480px) {
   body { font-size: 16px; }
   .brand span { display: none; }
-  .nav { gap: 18px; }
+  .nav { gap: 14px; }
+  .nav a { font-size: 14px; }
+  .nav .nav-friends { padding: 6px 10px; }
+  .nav .nav-friends .icon { display: none; }
   .hero-stats dd { font-size: 28px; }
   .game-body { padding: 18px 18px 20px; }
   .hero-actions .btn, .buy-actions .btn { width: 100%; }
+}
+@media (max-width: 380px) {
+  .header-inner { gap: 10px; }
+  .brand img { width: 32px; height: 32px; }
+  .nav { gap: 10px; }
+  .nav a { font-size: 13px; }
+  .nav .nav-friends { padding: 5px 8px; }
 }
